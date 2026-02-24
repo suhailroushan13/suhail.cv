@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import NotFound from "./pages/NotFound";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import * as THREE from "three";
+import { Analytics } from "@vercel/analytics/react";
 
 /* ─────────────────────────────────────────────
    1. Generate receipt texture on an HTML canvas
@@ -812,9 +813,12 @@ function ClothReceipt() {
    ───────────────────────────────────────────── */
 export default function App() {
   return (
-    <Routes>
-      <Route path="/" element={<ClothReceipt />} />
-      <Route path="*" element={<NotFound />} />
-    </Routes>
+    <>
+      <Routes>
+        <Route path="/" element={<ClothReceipt />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+      <Analytics />
+    </>
   );
 }

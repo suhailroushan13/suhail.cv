@@ -1,0 +1,8 @@
+{
+  "buildCommand": "pnpm run build",
+  "outputDirectory": "dist",
+  "framework": null,
+  "rewrites": [
+    { "source": "/((?!assets|vite.svg|site.webmanifest|robots.txt|sitemap.xml|og-image.png|android-chrome-|apple-touch-icon).*)", "destination": "/index.html" }
+  ]
+}

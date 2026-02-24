@@ -1,0 +1,21 @@
+{
+  "name": "Suhail Roushan - Software Engineer",
+  "short_name": "Suhail Roushan",
+  "description": "Software Engineer specializing in Next.js, Nest.js, React Native, MongoDB, AWS, and AI. Interactive 3D CV portfolio.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f0f0f",
+  "theme_color": "#0f0f0f",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

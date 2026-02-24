@@ -3,6 +3,6 @@
   "outputDirectory": "dist",
   "framework": null,
   "rewrites": [
-    { "source": "/((?!assets|favicon.ico|favicon-16x16.png|favicon-32x32.png|site.webmanifest|robots.txt|sitemap.xml|og-image.png|android-chrome-|apple-touch-icon).*)", "destination": "/index.html" }
+    { "source": "/((?!assets|favicon.ico|favicon-16x16.png|favicon-32x32.png|site.webmanifest|robots.txt|sitemap.xml|image.png|android-chrome-|apple-touch-icon).*)", "destination": "/index.html" }
   ]
 }

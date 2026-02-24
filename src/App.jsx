@@ -808,13 +808,58 @@ function ClothReceipt() {
 }
 
 /* ─────────────────────────────────────────────
-   7. App with routing
+   7. Desktop-only gate (block mobile & tablet)
+   ───────────────────────────────────────────── */
+const DESKTOP_MIN_WIDTH = 1024;
+
+function DesktopOnlyGate({ children }) {
+  const [isDesktop, setIsDesktop] = useState(() => window.innerWidth >= DESKTOP_MIN_WIDTH);
+
+  useEffect(() => {
+    const check = () => setIsDesktop(window.innerWidth >= DESKTOP_MIN_WIDTH);
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, []);
+
+  if (isDesktop) return children;
+
+  return (
+    <div
+      style={{
+        width: "100vw",
+        height: "100vh",
+        background: "#0f0f0f",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        fontFamily: "system-ui, -apple-system, sans-serif",
+        color: "#fff",
+        padding: 24,
+        textAlign: "center",
+      }}
+    >
+      <div style={{ fontSize: 48, marginBottom: 16 }}>🖥️</div>
+      <h1 style={{ fontSize: 22, fontWeight: 600, margin: "0 0 12px" }}>
+        Desktop only
+      </h1>
+      <p style={{ fontSize: 15, color: "rgba(255,255,255,0.6)", margin: 0, maxWidth: 320 }}>
+        This experience is optimized for desktop. Please view on a larger screen.
+      </p>
+    </div>
+  );
+}
+
+/* ─────────────────────────────────────────────
+   8. App with routing
    ───────────────────────────────────────────── */
 export default function App() {
   return (
-    <Routes>
-      <Route path="/" element={<ClothReceipt />} />
-      <Route path="*" element={<NotFound />} />
-    </Routes>
+    <DesktopOnlyGate>
+      <Routes>
+        <Route path="/" element={<ClothReceipt />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </DesktopOnlyGate>
   );
 }

@@ -2,7 +2,7 @@
 
 A creative developer portfolio designed as a realistic thermal receipt. It displays personal information, tech stack, pricing-style skills, and total experience in a unique billing format. Built with modern web technologies, featuring interactive drag behavior, minimal design, and a clean typography-based layout.
 
-**Live:** [suhailroushan.com](https://suhailroushan.com) · [suhail.cv](https://suhail.cv)
+**Live:** · [suhail.cv](https://suhail.cv)
 
 ![Portfolio Preview](./src/assets/image.png)
 

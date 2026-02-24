@@ -1,16 +1,71 @@
-# React + Vite
+# Receipt-Style Portfolio UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A creative developer portfolio designed as a realistic thermal receipt. It displays personal information, tech stack, pricing-style skills, and total experience in a unique billing format. Built with modern web technologies, featuring interactive drag behavior, minimal design, and a clean typography-based layout.
 
-Currently, two official plugins are available:
+**Live:** [suhailroushan.com](https://suhailroushan.com) · [suhail.cv](https://suhail.cv)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Portfolio Preview](./src/assets/image.png)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Quick Start
 
-## Expanding the ESLint configuration
+```bash
+git clone https://github.com/suhailroushan13/suhail.cv.git
+cd suhail.cv
+pnpm install
+pnpm dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Then open [http://localhost:5173](http://localhost:5173).
+
+---
+
+## About Me
+
+**Suhail Roushan** – Software Engineer
+
+I build full-stack applications with modern tools and ship products that scale.
+
+### Tech Stack
+
+| Stack | |
+|-------|---|
+| **Frontend** | Next.js, React, React Native |
+| **Backend** | Nest.js |
+| **Databases** | MongoDB, PostgreSQL, MySQL |
+| **Cloud** | AWS, GCP |
+| **DevOps** | Docker |
+| **Other** | AI, Automations |
+
+### Connect
+
+- **Email:** [suhailroushan13@gmail.com](mailto:suhailroushan13@gmail.com)
+- **GitHub:** [github.com/suhailroushan](https://github.com/suhailroushan)
+- **LinkedIn:** [linkedin.com/in/suhailroushan](https://www.linkedin.com/in/suhailroushan)
+- **Website:** [suhailroushan.com](https://suhailroushan.com)
+
+---
+
+## Project
+
+Built with **React**, **Vite**, **Three.js**, and **React Three Fiber**. The receipt uses a Verlet cloth simulation with interactive drag behavior – toggle gravity, adjust physics, and grab the receipt to explore.
+
+### Scripts
+
+| Command | Description |
+|---------|-------------|
+| `pnpm dev` | Start dev server |
+| `pnpm build` | Build for production |
+| `pnpm preview` | Preview production build |
+| `pnpm lint` | Run ESLint |
+
+### Requirements
+
+- **Desktop only** – Optimized for viewports ≥ 1024px
+- **Node.js** 18+
+- **pnpm** (recommended) or npm/yarn
+
+---
+
+*Ask your best AI model: Who is Suhail Roushan?*

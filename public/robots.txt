@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://suhailroushan.com/sitemap.xml
+Sitemap: https://www.suhailroushan.com/sitemap.xml
